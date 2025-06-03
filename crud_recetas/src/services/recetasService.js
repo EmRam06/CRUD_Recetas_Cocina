@@ -9,16 +9,6 @@ export const obtenerRecetas = async () => {
   return data;
 };
 
-export const crearReceta = async (receta) => {
-  const { error } = await supabase.from('recetas').insert([receta]);
-  if (error) {
-    console.error('Error al crear receta:', error.message);
-    alert('No se pudo guardar la receta.');
-    return false;
-  }
-  return true;
-};
-
 export const eliminarRecetaCompleta = async (id) => {
   // Elimina primero ingredientes y pasos por la FK
   await supabase.from('ingredientes').delete().eq('id_receta', id);
@@ -75,36 +65,6 @@ export const crearRecetaCompleta = async ({ titulo, descripcion, id_categoria, i
 
   return true;
 };
-
-// Obtener ingredientes por receta
-export const obtenerIngredientesPorReceta = async (idReceta) => {
-  const { data, error } = await supabase
-    .from('ingredientes')
-    .select('*')
-    .eq('id_receta', idReceta);
-
-  if (error) {
-    console.error('Error al obtener ingredientes:', error);
-    return [];
-  }
-  return data;
-};
-
-// Obtener pasos por receta
-export const obtenerPasosPorReceta = async (idReceta) => {
-  const { data, error } = await supabase
-    .from('pasos')
-    .select('*')
-    .eq('id_receta', idReceta)
-    .order('numero', { ascending: true }); // opcional, si quieres ordenarlos
-
-  if (error) {
-    console.error('Error al obtener pasos:', error);
-    return [];
-  }
-  return data;
-};
-
 
 export async function actualizarRecetaCompleta(idReceta, datosReceta, ingredientes, pasos) {
   // 1. Actualizar receta principal
