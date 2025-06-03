@@ -1,0 +1,20 @@
+.recetas-page {
+  padding: 2rem 1rem;
+}
+
+.recetas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.recetas-header h2 {
+  font-weight: 600;
+  color: #333;
+}
+
+.btn-nueva-receta {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}

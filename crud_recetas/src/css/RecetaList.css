@@ -1,0 +1,26 @@
+.receta-lista {
+  margin-top: 2rem;
+}
+
+.receta-lista h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.receta-lista .list-group-item {
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.receta-lista .list-group-item:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.01);
+}
+
+.receta-lista .list-group-item strong {
+  color: #2c3e50;
+}

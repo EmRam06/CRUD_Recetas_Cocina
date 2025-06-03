@@ -1,0 +1,39 @@
+/* Título principal del formulario */
+form h4 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #6600ff;
+  text-align: center;
+}
+
+
+/* Separación entre campos */
+form .mb-3 {
+  margin-bottom: 1.25rem;
+}
+
+/* Agrupación de inputs dinámicos (ingredientes y pasos) */
+.d-flex.gap-2.mb-2 {
+  gap: 0.5rem;
+}
+
+/* Botón + con margen vertical */
+.btn-secondary.mt-1 {
+  margin-top: 0.5rem;
+  background-color: #6600ff;
+}
+
+/* Botones eliminar más pequeños */
+button.btn-danger {
+  padding: 0.25rem 0.6rem;
+  line-height: 1;
+  font-size: 0.9rem;
+}
+
+form .btn-primary {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  background-color: #6600ff;
+}

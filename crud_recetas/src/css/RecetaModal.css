@@ -1,0 +1,52 @@
+/* Estiliza el modal en modo lectura y edición */
+.modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: #6600ff;
+}
+
+.modal-body p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Etiquetas fuertes más legibles */
+.modal-body p strong {
+  color: #6600ff;
+}
+
+/* Listas más espaciadas */
+.modal-body ul,
+.modal-body ol {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.modal-body ul li,
+.modal-body ol li {
+  margin-bottom: 0.3rem;
+}
+
+/* Espaciado entre campos en modo edición */
+.form-group+.form-group {
+  margin-top: 1rem;
+}
+
+/* Botones de acción en ingredientes y pasos */
+.d-flex.mb-2>.btn-danger {
+  flex-shrink: 0;
+}
+
+/* Botón + centrado mejor visualmente */
+button.btn-secondary.mt-1,
+button.btn-secondary {
+  margin-top: 0.5rem;
+}
+
+.modal-footer .btn {
+  min-width: 100px;
+}

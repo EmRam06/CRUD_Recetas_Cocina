@@ -1,0 +1,16 @@
+.crear-receta-page {
+  padding: 2rem 1rem;
+}
+
+.crear-receta-page h2 {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.btn-regresar {
+  font-size: 0.95rem;
+  padding: 0.4rem 1rem;
+  background-color: #6600ff;
+}
