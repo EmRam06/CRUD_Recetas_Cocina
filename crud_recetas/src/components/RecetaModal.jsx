@@ -222,6 +222,7 @@ const RecetaModal = ({ receta, onClose, onRecetaActualizada }) => {
               {pasos.map((p, i) => (
                 <div key={i} className="d-flex gap-2 mb-2">
                   <Form.Control
+                    as="textarea"
                     placeholder={`Paso ${i + 1}`}
                     value={p.descripcion}
                     onChange={(e) => {
