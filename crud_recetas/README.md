@@ -1,12 +1,26 @@
-# React + Vite
+Actividad Individual - Componente Web con conexión a Base de Datos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tema - Administrador de Recetas de Cocina
+Plataforma para crear, editar y eliminar recetas, con categorías, ingredientes y pasos.
 
-Currently, two official plugins are available:
+Desarrolla una página con componentes que realicen operaciones de CRUD a la Base de Datos utilizando ORM Prisma.
+Como framework de frontend puedes utilizar Remix o NextJS
+Puedes realizar algún componente que te sirva en el Reto o crear uno desde cero.
+Utiliza la documentación principal de cada uno de los frameworks
+Entrega lo que avanzaste al final de la clase.
+Y después al final del martes.
+Evaluación:
+(35%) Se realizan las operaciones de CRUD, Alta, Baja, Cambios y Borrado
+(30%) El/los componentes cuenta con manejo de errores y devuelven los mensajes pertinentes al usuario
+(30%) El código sigue los principios de código limpio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ 
 
-## Expanding the ESLint configuration
+CÓDIGO LIMPIO:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Descriptive names: Meaningful Variable and Function Names
+Short and concise functions and components: DRY (Don't Repeat Yourself) Principle
+Consistent indentation and formatting: Code Style and Formatting Consistency
+Comments and documentation: Self-Documenting Code
+Avoiding code duplication: DRY (Don't Repeat Yourself) Principle
+Error and exception handling: Error and Exception Handling
